@@ -1,0 +1,37 @@
+{
+    "name": "fox/laravel-cmd-clear-caches",
+    "description": "Fox's Toolset | Laravel Command: Clear Caches",
+    "keywords": ["cli", "laravel", "console", "command", "cache"],
+    "license": "MIT",
+    "type": "project",
+    "version": "0.0.0",
+    "require": {
+        "php": "^7.1.7",
+        "illuminate/console": "^5.5"
+    },
+    "require-dev": {
+        "ext-mbstring": "*",
+        "friendsofphp/php-cs-fixer": "^2.10",
+        "fzaninotto/faker": "~1.7.1",
+        "mockery/mockery": "~1.0",
+        "phpunit/phpunit": "~6.5.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Fox\\Laravel\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Fox\\Laravel\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "style-fix": "vendor/bin/php-cs-fixer fix",
+        "style-check": "vendor/bin/php-cs-fixer fix --dry-run --using-cache=no"
+    },
+    "config": {
+        "preferred-install": "dist"
+    }
+}
