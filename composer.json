@@ -3,8 +3,8 @@
     "description": "Fox's Artisan Command Collection",
     "keywords": ["artisan", "laravel", "console", "command", "cache"],
     "license": "MIT",
-    "type": "project",
-    "version": "1.0.0",
+    "type": "library",
+    "version": "1.0.1",
     "require": {
         "php": "^7.1.7",
         "illuminate/support": "^5.5",
