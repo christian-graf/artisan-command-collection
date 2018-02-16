@@ -4,7 +4,7 @@
     "keywords": ["artisan", "laravel", "console", "command", "cache"],
     "license": "MIT",
     "type": "project",
-    "version": "0.0.2",
+    "version": "1.0.0",
     "require": {
         "php": "^7.1.7",
         "illuminate/support": "^5.5",
