@@ -1,12 +1,13 @@
 {
-    "name": "fox/laravel-cmd-clear-caches",
-    "description": "Fox's Toolset | Laravel Command: Clear Caches",
-    "keywords": ["cli", "laravel", "console", "command", "cache"],
+    "name": "fox/artisan-cmd-collection",
+    "description": "Fox's Artisan Command Collection",
+    "keywords": ["artisan", "laravel", "console", "command", "cache"],
     "license": "MIT",
     "type": "project",
-    "version": "0.0.0",
+    "version": "0.0.2",
     "require": {
         "php": "^7.1.7",
+        "illuminate/support": "^5.5",
         "illuminate/console": "^5.5"
     },
     "require-dev": {
@@ -18,12 +19,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Fox\\Laravel\\": "src/"
+            "Fox\\Artisan\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Fox\\Laravel\\Tests\\": "tests/"
+            "Fox\\Artisan\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -33,5 +34,12 @@
     },
     "config": {
         "preferred-install": "dist"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Fox\\Artisan\\CommandsServiceProvider"
+            ]
+        }
     }
 }
