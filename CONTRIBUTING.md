@@ -10,7 +10,7 @@
 
 1. Clone project with git:
     ```bash
-    git clone git@github.com:christian-graf/laravel-cmd-clear-caches.git <destination directory>
+    git clone git@github.com:christian-graf/artisan-command-collection.git <destination directory>
     
     # Head to the project root directory 
     cd <destination directory>

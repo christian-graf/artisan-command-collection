@@ -2,6 +2,30 @@
 
 A collection of useful (Laravel)Artisan commands.
 
+## Installation
+
+In Laravel >= 5.5 the collection will register via the new package discovery feature, so you only need to add the package via composer to your project.
+
+```bash
+composer require "fox/artisan-cmd-collection:^1.0"
+```
+
+After installation you should see
+
+```bash
+Discovered Package: fox/artisan-cmd-collection
+```
+
+and you are ready to go!
+
+To see all available commands of this collection run 
+
+```bash
+php artisan list fox
+```
+
+in your command line.
+
 ## Available commands
 
 ### fox:cache:clear
