@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+<a name="1.1.0"></a>
+# 1.1.0 (2018-07-16)
+
+### Features
+
+* **commands:** add command to create (and drop) a database
+
 <a name="1.0.2"></a>
 # 1.0.2 (2018-04-11)
 
