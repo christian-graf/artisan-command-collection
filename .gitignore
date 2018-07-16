@@ -79,3 +79,4 @@ atlassian-ide-plugin.xml
 .psql_history
 .yarnrc
 /build
+/test-reports
