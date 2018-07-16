@@ -4,6 +4,7 @@ namespace Fox\Artisan;
 
 use Illuminate\Support\ServiceProvider;
 use Fox\Artisan\Console\Commands\ClearCaches;
+use Fox\Artisan\Console\Commands\CreateDatabase;
 use Illuminate\Contracts\Foundation\Application as ApplicationContract;
 
 class CommandsServiceProvider extends ServiceProvider
@@ -29,7 +30,8 @@ class CommandsServiceProvider extends ServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $this->commands([
-               ClearCaches::class,
+                ClearCaches::class,
+                CreateDatabase::class,
             ]);
         }
     }

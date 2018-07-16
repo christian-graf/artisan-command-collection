@@ -14,28 +14,15 @@ declare(strict_types=1);
 
 namespace Fox\Artisan\Tests\Unit\Console\Commands;
 
-use PHPUnit\Framework\TestCase;
-use PHPUnit\Framework\MockObject\MockObject;
 use Fox\Artisan\Console\Commands\ClearCaches;
+use Fox\Artisan\Tests\Unit\AbstractCommandTestCase;
 
-class ClearCachesTest extends TestCase
+class ClearCachesTest extends AbstractCommandTestCase
 {
-    /**
-     * @var ClearCaches|MockObject
-     */
-    protected $cmd;
-
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
-    {
-        $this->cmd = $this->getMockBuilder(ClearCaches::class)
-           ->disableOriginalConstructor()
-           ->setMethods(['argument', 'option', 'call', 'comment', 'error', 'warn'])
-           ->getMock()
-       ;
-    }
+    protected $cmdClassName = ClearCaches::class;
 
     /**
      * Get a list of caches which the command should be could handle!

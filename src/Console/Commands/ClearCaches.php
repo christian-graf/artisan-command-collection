@@ -35,7 +35,7 @@ class ClearCaches extends Command
      *
      * @return int
      */
-    public function handle()
+    public function handle(): int
     {
         $cachesToClear = $this->argument('cache') ?? [];
         if ($this->option('all')) {
