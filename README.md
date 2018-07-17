@@ -52,6 +52,30 @@ Help:
   Clears multiple caches used by your application. e.G. config or view caches
 ```
 
+### db:create
+
+```bash
+Description:
+  Create a database using the designated connection.
+
+Usage:
+  db:create [options] [--] [<connection>]
+
+Arguments:
+  connection                   Name of the connection defined in your config/database.php file. [default: "default"]
+
+Options:
+  -h, --help                   Display this help message
+  -q, --quiet                  Do not output any message
+  -V, --version                Display this application version
+      --ansi                   Force ANSI output
+      --no-ansi                Disable ANSI output
+  -n, --no-interaction         Do not ask any interactive question
+      --env[=ENV]              The environment the command should run under
+  -incl-drop-database, --drop  Include drop database statement
+  -v|vv|vvv, --verbose         Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
+```
+
 ## Development - Getting Started
 
 See the [CONTRIBUTING](CONTRIBUTING.md) file.
