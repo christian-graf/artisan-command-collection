@@ -2,6 +2,9 @@
 
 A collection of useful (Laravel)Artisan commands.
 
+[![Build Status](https://travis-ci.com/christian-graf/artisan-command-collection.svg?branch=master)](https://travis-ci.com/christian-graf/artisan-command-collection)
+
+
 ## Installation
 
 In Laravel >= 5.5 the collection will register via the new package discovery feature, so you only need to add the package via composer to your project.
