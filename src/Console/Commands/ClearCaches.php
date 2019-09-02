@@ -55,23 +55,28 @@ class ClearCaches extends Command
                 case 'app':
                     $this->comment('clear application cache');
                     $this->call('cache:clear');
+
                     break;
                 case 'config':
                     $this->comment('clear config cache');
                     $this->call('config:clear');
+
                     break;
                 case 'route':
                     $this->comment('clear route cache');
                     $this->call('route:clear');
+
                     break;
                 case 'view':
                     $this->comment('clear view cache');
                     $this->call('view:clear');
+
                     break;
                 default:
                     $this->error('unknown cache type "' . $cache . '"');
 
                     return 1;
+
                     break;
             }
         }

@@ -114,15 +114,19 @@ class CreateDatabase extends Command
         switch ($driverName) {
             case 'mysql':
                 return '`' . $identifier . '`';
+
                 break;
             case 'pgsql':
                 return '"' . $identifier . '"';
+
                 break;
             case 'sqlsrv':
                 return '[' . $identifier . ']';
+
                 break;
             default:
                 return $identifier;
+
                 break;
         }
     }
@@ -163,9 +167,11 @@ class CreateDatabase extends Command
             case 'mysql':
             case 'pgsql':
                 return 'DROP DATABASE IF EXISTS ' . $databaseName . ';';
+
                 break;
             default:
                 return 'DROP DATABASE ' . $databaseName . ';';
+
                 break;
         }
     }
