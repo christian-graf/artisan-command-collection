@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+<a name="1.1.1"></a>
+# 1.1.1 (2019-09-02)
+
+### Style
+
+* **\*:** Add StyleCI configuration.
+
 <a name="1.1.0"></a>
 # 1.1.0 (2018-07-16)
 

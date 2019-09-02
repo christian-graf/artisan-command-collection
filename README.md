@@ -3,6 +3,10 @@
 A collection of useful (Laravel)Artisan commands.
 
 [![Build Status](https://travis-ci.com/christian-graf/artisan-command-collection.svg?branch=master)](https://travis-ci.com/christian-graf/artisan-command-collection)
+[![Latest Stable Version](https://poser.pugx.org/fox/artisan-cmd-collection/v/stable)](https://packagist.org/packages/fox/artisan-cmd-collection)
+[![Total Downloads](https://poser.pugx.org/fox/artisan-cmd-collection/downloads)](https://packagist.org/packages/fox/artisan-cmd-collection)
+[![License](https://poser.pugx.org/fox/artisan-cmd-collection/license)](https://packagist.org/packages/fox/artisan-cmd-collection)
+
 
 
 ## Installation
