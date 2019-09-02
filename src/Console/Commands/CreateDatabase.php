@@ -173,8 +173,8 @@ class CreateDatabase extends Command
     /**
      * @param string      $databaseName
      * @param string      $driverName
-     * @param null|string $charset
-     * @param null|string $collation
+     * @param string|null $charset
+     * @param string|null $collation
      *
      * @return string
      */
