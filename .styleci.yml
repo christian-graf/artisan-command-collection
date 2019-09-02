@@ -1,0 +1,11 @@
+preset: symfony
+risky: false
+disabled:
+  - concat_without_spaces
+  - yoda_style
+enabled:
+  - concat_with_spaces
+finder:
+  name: "*.php"
+  exclude:
+    - vendor
