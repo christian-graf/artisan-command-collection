@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+# 1.1.2 (2019-09-09)
+
+### Chore
+
+* **\*:** Add Laravel 6.0 support.
+
 <a name="1.1.1"></a>
 # 1.1.1 (2019-09-02)
 
