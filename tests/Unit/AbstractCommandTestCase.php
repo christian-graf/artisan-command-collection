@@ -33,11 +33,11 @@ abstract class AbstractCommandTestCase extends TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->cmd = $this->getMockBuilder($this->cmdClassName)
             ->disableOriginalConstructor()
-            ->setMethods(['argument', 'option', 'call', 'info', 'comment', 'error', 'warn'])
+            ->onlyMethods(['argument', 'option', 'call', 'info', 'comment', 'error', 'warn'])
             ->getMock()
         ;
     }

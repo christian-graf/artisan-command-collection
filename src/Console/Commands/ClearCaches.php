@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Fox\Artisan\Console\Commands;
 
 use Illuminate\Console\Command;
@@ -16,14 +18,14 @@ class ClearCaches extends Command
      * {@inheritdoc}
      */
     protected $signature =
-        'fox:cache:clear 
+        'fox:cache:clear
         {cache?* : Type of the cache(s) to clear - available values are [app|config|route|view]}
         {--all : Clear all caches}';
 
     /**
-     * @var array
+     * @var array|string[]
      */
-    private $availableCacheTypes = ['app', 'config', 'route', 'view'];
+    private array $availableCacheTypes = ['app', 'config', 'route', 'view'];
 
     /**
      * Clears all designated caches.
@@ -32,8 +34,6 @@ class ClearCaches extends Command
      *  - config            ... laravel configuration cache
      *  - route             ... laravel route list cache
      *  - view              ... laravel view cache.
-     *
-     * @return int
      */
     public function handle(): int
     {

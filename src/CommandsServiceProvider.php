@@ -1,13 +1,16 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Fox\Artisan;
 
 use Illuminate\Support\ServiceProvider;
 use Fox\Artisan\Console\Commands\ClearCaches;
 use Fox\Artisan\Console\Commands\CreateDatabase;
+use Illuminate\Contracts\Support\DeferrableProvider;
 use Illuminate\Contracts\Foundation\Application as ApplicationContract;
 
-class CommandsServiceProvider extends ServiceProvider
+class CommandsServiceProvider extends ServiceProvider implements DeferrableProvider
 {
     /**
      * {@inheritdoc}
@@ -15,11 +18,6 @@ class CommandsServiceProvider extends ServiceProvider
      * @var ApplicationContract
      */
     protected $app;
-
-    /**
-     * {@inheritdoc}
-     */
-    protected $defer = true;
 
     /**
      * Register bindings in the container.

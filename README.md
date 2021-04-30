@@ -8,16 +8,15 @@ A collection of useful (Laravel)Artisan commands.
 [![License](https://poser.pugx.org/fox/artisan-cmd-collection/license)](https://packagist.org/packages/fox/artisan-cmd-collection)
 
 
-
 ## Installation
 
-In Laravel >= 5.5 the collection will register via the new package discovery feature, so you only need to add the package via composer to your project.
+In Laravel >= 6.0 the collection will register via the new package discovery feature, so you only need to add the package via composer to your project.
 
 ```bash
-composer require "fox/artisan-cmd-collection:^1.0"
+composer require "fox/artisan-cmd-collection:^2.0"
 ```
 
-After installation you should see
+After the installation is complete, you should see
 
 ```bash
 Discovered Package: fox/artisan-cmd-collection
@@ -25,7 +24,7 @@ Discovered Package: fox/artisan-cmd-collection
 
 and you are ready to go!
 
-To see all available commands of this collection run 
+To see all available commands of this collection run
 
 ```bash
 php artisan list fox
@@ -92,5 +91,5 @@ See the [CONTRIBUTING](CONTRIBUTING.md) file.
 See the [CHANGELOG](CHANGELOG.md) file.
 
 ## License
- 
+
 See the [LICENSE](LICENSE.md) file.

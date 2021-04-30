@@ -1,14 +1,4 @@
 <?php
-/**
- * ----------------------------------------------------------------------------
- * This code is part of an application or library developed by Datamedrix and
- * is subject to the provisions of your License Agreement with
- * Datamedrix GmbH.
- *
- * @copyright (c) 2018 Datamedrix GmbH
- * ----------------------------------------------------------------------------
- * @author Christian Graf <c.graf@datamedrix.com>
- */
 
 declare(strict_types=1);
 
@@ -45,7 +35,7 @@ class CreateDatabaseTest extends AbstractCommandTestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->pdoMock = $this->getMockBuilder(\PDO::class)->disableOriginalConstructor()->getMock();
         $this->dbmMock = $this->getMockBuilder(DatabaseManager::class)->disableOriginalConstructor()->getMock();
@@ -61,6 +51,9 @@ class CreateDatabaseTest extends AbstractCommandTestCase
         ;
     }
 
+    /**
+     * @return array[]
+     */
     public function getHandleTestData(): array
     {
         return [
@@ -188,13 +181,6 @@ class CreateDatabaseTest extends AbstractCommandTestCase
      * Test.
      *
      * @dataProvider getHandleTestData
-     *
-     * @param string $dbDriverName
-     * @param string $dbName
-     * @param string $quotedDbName
-     * @param string $expectedCreateSQL
-     * @param bool   $withDrop
-     * @param string $expectedDropSQL
      */
     public function testHandle(string $dbDriverName, string $dbName, string $quotedDbName, string $expectedCreateSQL, bool $withDrop, string $expectedDropSQL)
     {

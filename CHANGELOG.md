@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+# 2.0.0 (2021-04-30)
+
+### Chore
+
+* **\*:** Add Laravel 7.0 support.
+* **\*:** Add Laravel 8.0 support.
+
+### BREAKING CHANGE(S)
+
+* **\*:** Increase minimum required php version to >= 7.4
+
+
 # 1.1.2 (2019-09-09)
 
 ### Chore

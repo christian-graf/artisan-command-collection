@@ -1,14 +1,4 @@
 <?php
-/**
- * ----------------------------------------------------------------------------
- * This code is part of an application or library developed by Datamedrix and
- * is subject to the provisions of your License Agreement with
- * Datamedrix GmbH.
- *
- * @copyright (c) 2018 Datamedrix GmbH
- * ----------------------------------------------------------------------------
- * @author Christian Graf <c.graf@datamedrix.com>
- */
 
 declare(strict_types=1);
 
@@ -26,8 +16,6 @@ class ClearCachesTest extends AbstractCommandTestCase
 
     /**
      * Get a list of caches which the command should be could handle!
-     *
-     * @return array
      */
     public function getCachesToClear(): array
     {
@@ -86,10 +74,6 @@ class ClearCachesTest extends AbstractCommandTestCase
      * Test.
      *
      * @dataProvider getCachesToClear
-     *
-     * @param string $cache
-     * @param string $comment
-     * @param string $call
      */
     public function testHandle(string $cache, string $comment, string $call)
     {
